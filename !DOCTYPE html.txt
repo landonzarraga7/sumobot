@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SumoBot - Presentación de Robot</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent: #38bdf8;
+            --text-color: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(to bottom, #1e293b, var(--bg-color));
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--accent);
+        }
+        header p {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        section {
+            background-color: var(--card-bg);
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        h2 {
+            color: var(--accent);
+            border-bottom: 2px solid #334155;
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .spec-item {
+            background: #0f172a;
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent);
+        }
+        .spec-item strong {
+            color: var(--accent);
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🤖 Mi Robot Sumo</h1>
+        <p>Proyecto de Mecatrónica - Diseñado para competir y ganar el dohyō</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>⚡ Acerca del Proyecto</h2>
+            <p>Este robot autónomo de categoría sumo fue diseñado y programado desde cero. Cuenta con la tracción, velocidad y sensores necesarios para detectar y empujar fuera del ring al oponente de manera totalmente automática.</p>
+        </section>
+
+        <section>
+            <h2>⚙️ Especificaciones Técnicas</h2>
+            <div class="specs-grid">
+                <div class="spec-item">
+                    <strong>Categoría:</strong> <br>Sumo Autónomo (3 kg)
+                </div>
+                <div class="spec-item">
+                    <strong>Tracción:</strong> <br>4WD con motores JGB37-520
+                </div>
+                <div class="spec-item">
+                    <strong>Drivers de Motor:</strong> <br>BTS7960 de alta potencia
+                </div>
+                <div class="spec-item">
+                    <strong>Sensores:</strong> <br>TCRT5000 (líneas) y E18-D80NK (proximidad)
+                </div>
+                <div class="spec-item">
+                    <strong>Cerebro:</strong> <br>Microcontrolador programado en C++
+                </div>
+                <div class="spec-item">
+                    <strong>Alimentación:</strong> <br>Batería LiPo de alto rendimiento
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>🧠 Funcionamiento y Lógica</h2>
+            <p>El código utiliza lecturas en tiempo real de los sensores de proximidad para buscar al contrincante en el ring. Al mismo tiempo, los sensores de piso evitan que el robot rebase la línea blanca del borde, garantizando que no se salga de la pista.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>Presentado para exposición escolar | Hecho con pasión por la tecnología.</p>
+    </footer>
+
+</body>
+</html>
